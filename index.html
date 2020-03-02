@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netlify form submission</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="main">
         <div class="container">
             <section>
                 <h1>Formulario Contacto</h1>
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
+                <form name="contact-netlify-form-submission" method="POST" data-netlify="true">
+                    <fieldset>
                       <label>Nombre: <input type="text" name="name" /></label>   
-                    </p>
-                    <p>
+                    </fieldset>
+                    <fieldset>
                       <label>Email: <input type="email" name="email" /></label>
-                    </p>
-                    <p>
+                    </fieldset>
+                    <fieldset>
                       <label>Puesto: <select name="role[]" multiple>
                         <option value="lider">Lider</option>
                         <option value="seguidor">Seguidor</option>
                       </select></label>
-                    </p>
-                    <p>
+                    </fieldset>
+                    <fieldset>
                       <label>Mensaje: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
+                    </fieldset>
+                    <fieldset>
+                        <div data-netlify-recaptcha="true"></div>
+                    </fieldset>
+                    <fieldset>
                       <button type="submit">Enviar</button>
-                    </p>
+                    </fieldset>
                   </form>
             </section>
         </div>
