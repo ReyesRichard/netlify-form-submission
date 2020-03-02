@@ -11,7 +11,10 @@
         <div class="container">
             <section>
                 <h1>Formulario Contacto</h1>
-                <form name="contact-netlify-form-submission" method="POST" data-netlify="true">
+                <form name="contact-netlify-form-submission" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <fieldset class='hidden'>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </fieldset>
                     <fieldset>
                       <label>Nombre: <input type="text" name="name" /></label>   
                     </fieldset>
