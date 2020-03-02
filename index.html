@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify form submission</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <section>
+                <h1>Formulario Contacto</h1>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Nombre: <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Puesto: <select name="role[]" multiple>
+                        <option value="lider">Lider</option>
+                        <option value="seguidor">Seguidor</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Mensaje: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Enviar</button>
+                    </p>
+                  </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
